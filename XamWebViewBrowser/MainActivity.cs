@@ -24,7 +24,7 @@ namespace XamWebViewBrowser
             base.OnCreate(bundle);
             this.SetContentView(Resource.Layout.Main);
 
-            var goButton = FindViewById<Button>(Resource.Id.goButton);
+            var goButton = this.FindViewById<Button>(Resource.Id.goButton);
 
             this.editText = this.FindViewById<EditText>(Resource.Id.urlText);
 
