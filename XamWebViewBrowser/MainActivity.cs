@@ -8,6 +8,7 @@ using Android.OS;
 
 namespace XamWebViewBrowser
 {
+    using Android.Views.InputMethods;
     using Android.Webkit;
 
     [Activity(Label = "XamWebViewBrowser", MainLauncher = true, Icon = "@drawable/icon", HardwareAccelerated = true)]
@@ -35,6 +36,9 @@ namespace XamWebViewBrowser
 
             goButton.Click += delegate
                 {
+                    var imm = (InputMethodManager)this.GetSystemService(Context.InputMethodService);
+                    imm.HideSoftInputFromWindow(this.editText.WindowToken, 0);
+
                     this.webView.LoadUrl(this.editText.Text);
                 };
         }

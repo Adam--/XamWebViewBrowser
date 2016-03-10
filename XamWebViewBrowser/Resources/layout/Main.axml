@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/urlText"
-        android:text="http://www.w3schools.com/html/html5_video.asp" />
+        android:text="http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video" />
     <Button
         android:id="@+id/goButton"
         android:layout_width="fill_parent"
